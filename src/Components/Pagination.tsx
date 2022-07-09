@@ -14,14 +14,13 @@ export default function Item({
   handleItemsToDisplay,
   itemsToDisplay,
   numberOfPages,
-  itemsPerPage
+  itemsPerPage,
 }: PaginationProps) {
   const arrayPages = [];
-  if (numberOfPages > 5) {
     for (let i = 0; i < numberOfPages; i++) {
       arrayPages.push(i);
     }
-  }
+  console.log({numberOfPages, itemsToDisplay})
   return (
     <PaginationCard>
       <PaginationArrow
@@ -32,9 +31,9 @@ export default function Item({
       <HideDivMobile>
         {arrayPages.map((el) => (
           <Number
-            selected={(el + 1)*itemsPerPage === itemsToDisplay}
+            selected={el * itemsPerPage === itemsToDisplay}
             key={el}
-            onClick={() => handleItemsToDisplay((el + 1)*itemsPerPage)}
+            onClick={() => handleItemsToDisplay(el * itemsPerPage)}
           >
             {el + 1}
           </Number>
@@ -43,7 +42,7 @@ export default function Item({
       <PaginationArrow
         direction="right"
         method={() => handleItemsToDisplay(itemsToDisplay + itemsPerPage)}
-        disabled={itemsToDisplay === numberOfPages}
+        disabled={Math.ceil(itemsToDisplay / itemsPerPage)+1 === numberOfPages}
       />
     </PaginationCard>
   );
