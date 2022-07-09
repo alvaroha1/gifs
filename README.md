@@ -1,46 +1,78 @@
-# Getting Started with Create React App
+## Task - Gif Selector | Frontend-Exercise
+### Coding challenge
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Description**
+• Display the results as still thumbnails on the page in a layout that you find sensible.
+• A large volume of results should load in a performance-minded fashion - consider
+paginating your results in any form you’d like
+• Clicking on a thumbnail should launch a modal which allows the user to browse
+through individual GIF renditions (https://developers.giphy.com/docs/api/schema/
+#image-object). The renditions in this view should be fully animated
+• Provide a way for the user to perform a keyword search against the API
 
-## Available Scripts
+**Requirements**
+• Use ReactJS to complete the challenge
+• Make sure the solution works
+• Create a minimalistic but sensible UX
+• You are allowed to use any dependencies, including UI libraries, but make sure your
+choice is justified
+• Your code should be readable, maintainable, and production-ready
+• Your work will be reviewed in Chrome/a Chromium-based browser, so test
+accordingly
+• Provide the solution via a GitHub repo, or a CodeSandbox
+• Leave any notes you might have in a README.md file in the root of the repo
+• Specify how much time approximately it took you to complete the challenge
 
-In the project directory, you can run:
+**Nice to have**
+• Unit and/or e2e testing
+• Strictly typed codebase (consider using Typescript or Flow)
 
-### `npm start`
+[Alvaro Hernandez](mailto:alvarohernandezassens@gmail.com)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Proposed Solution
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- Setup client with create-react-app
+- Create basic component structure and design state workflow
+- Implement state system with props
+- Implement styes with styled-components
+- Refine logic and fix bugs
+- Setup Jest and add tests
 
-### `npm test`
+## Screenshots
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![Main](assets/Screenshot-1.png)
+![Mobile](assets/Screenshot-2.png)
 
-### `npm run build`
+## Libraries / Tools Used
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- React.js
+- Create React App for project setup
+- Typescript
+- Styled Components
+- React Icons
+- Jest
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Frontend Setup
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To install the dependencies run in the folder:
 
-### `npm run eject`
+`npm install` or `yarn install`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Place the API key in a .env file as REACT_APP_GIPHY_KEY, see `.env.example` for reference.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+And to run the app:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+`npm start` or `yarn start`
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Running the tests
 
-## Learn More
+You can run the unit tests using:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+`npm test` or `yarn test`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Future Work
+
+1. Complete unit testing with Jest and react-testing-library until coverage of at least 90%.
+2. Replace react-icons with plain SVGs for better performance.
+3. Replace styled-components with plain CSS for better caching.
+4. Implement Lazy Loading.
