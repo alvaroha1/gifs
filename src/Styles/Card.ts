@@ -29,6 +29,7 @@ export const ItemCard = styled.div`
   flex-direction: column;
   width: 100vh;
   margin: 6px;
+  cursor: pointer;
   @media only screen and (max-width: 600px) {
     padding: 10px;
     width: auto;

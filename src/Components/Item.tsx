@@ -13,10 +13,9 @@ export default function Item({ item, setShow, setSelectedId }: ItemProps) {
     setSelectedId(item.id);
   };
   return (
-    <ItemCard>
+    <ItemCard onClick={handleClick}>
         <span> {item.title}</span>
         <img src={item.images.preview_gif.url} alt={item.title} />
-        <button onClick={handleClick}>See More</button>
     </ItemCard>
   );
 }
