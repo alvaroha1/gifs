@@ -22,12 +22,10 @@ export default function App() {
   const [show, setShow] = useState<boolean>(false) 
   const [selectedId, setSelectedId] = useState<string>("");
   const itemsPerPage = 40;
-  const searchURL = `https://api.giphy.com/v1/gifs/search?q=${searchKeyword}&api_key=${process.env.REACT_APP_GIPHY_KEY}&limit=${itemsPerPage}&offset=${itemsToDisplay}`;
   const fetchData = async (url: string) => {
     try {
       const data = await fetch(url);
       const json = await data.json();
-      console.log(json)
       setItems(json.data);
       setNumberOfPages(Math.ceil(json.pagination.total_count/itemsPerPage));
     } catch (error) {
@@ -40,6 +38,7 @@ export default function App() {
 
   const handleButton = () => {
     setItemsToDisplay(0);
+    const searchURL = `https://api.giphy.com/v1/gifs/search?q=${searchKeyword}&api_key=${process.env.REACT_APP_GIPHY_KEY}&limit=${itemsPerPage}&offset=${0}`;
     fetchData(searchURL)
   };
 
@@ -48,6 +47,7 @@ export default function App() {
   };
 
   const handleItemsToDisplay = (index: number) => {
+    const searchURL = `https://api.giphy.com/v1/gifs/search?q=${searchKeyword}&api_key=${process.env.REACT_APP_GIPHY_KEY}&limit=${itemsPerPage}&offset=${index}`;
     setItemsToDisplay(index);
     fetchData(searchURL);
   };

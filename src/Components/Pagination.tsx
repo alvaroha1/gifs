@@ -20,7 +20,6 @@ export default function Item({
     for (let i = 0; i < numberOfPages; i++) {
       arrayPages.push(i);
     }
-  console.log({numberOfPages, itemsToDisplay})
   return (
     <PaginationCard>
       <PaginationArrow
