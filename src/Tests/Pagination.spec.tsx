@@ -7,7 +7,7 @@ describe("test Pagination component", () => {
   test("First and Last button work as expected", async () => {
     // Arrange
     const numberOfPages = 10;
-    const itemsToDisplay = 3;
+    const itemsToDisplay = 40;
     const handleItemsToDisplay = jest.fn();
     const itemsPerPage = 40;
     render(
@@ -24,13 +24,13 @@ describe("test Pagination component", () => {
 
     // Assert
     expect(handleItemsToDisplay).toBeCalledTimes(1);
-    expect(handleItemsToDisplay).toHaveBeenCalledWith(2);
+    expect(handleItemsToDisplay).toHaveBeenCalledWith(0);
 
     // Act
     fireEvent.click(screen.getByTestId("btn-plus-one"));
 
     // Assert
     expect(handleItemsToDisplay).toBeCalledTimes(2);
-    expect(handleItemsToDisplay).toHaveBeenCalledWith(2);
+    expect(handleItemsToDisplay).toHaveBeenCalledWith(80);
   });
 });

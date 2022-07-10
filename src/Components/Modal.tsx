@@ -1,11 +1,6 @@
 import { useEffect } from "react";
 import {
-  Background,
-  Content,
-  Title,
-  Body,
-  Padding,
-  ButtonDiv,
+  Background, Body, ButtonDiv, Content, Padding, Title
 } from "../Styles/Modal";
 import { ItemType } from "../Types/ItemType";
 import ModalItem from "./ModalItem";

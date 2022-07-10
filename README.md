@@ -38,10 +38,13 @@ accordingly
 - Refine logic and fix bugs
 - Setup Jest and add tests
 
+## Time
+- 4 or 5 hours during Saturday
+- 1 hour on Sunday to fix bugs
 ## Screenshots
 
 ![Main](assets/Screenshot-1.png)
-![Mobile](assets/Screenshot-2.png)
+![Main-2](assets/Screenshot-2.png)
 
 ## Libraries / Tools Used
 
