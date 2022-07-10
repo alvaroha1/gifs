@@ -2,30 +2,30 @@
 ### Coding challenge
 
 **Description**
-• Display the results as still thumbnails on the page in a layout that you find sensible.
-• A large volume of results should load in a performance-minded fashion - consider
+- Display the results as still thumbnails on the page in a layout that you find sensible.
+- A large volume of results should load in a performance-minded fashion - consider
 paginating your results in any form you’d like
-• Clicking on a thumbnail should launch a modal which allows the user to browse
+- Clicking on a thumbnail should launch a modal which allows the user to browse
 through individual GIF renditions (https://developers.giphy.com/docs/api/schema/
 #image-object). The renditions in this view should be fully animated
-• Provide a way for the user to perform a keyword search against the API
+- Provide a way for the user to perform a keyword search against the API
 
 **Requirements**
-• Use ReactJS to complete the challenge
-• Make sure the solution works
-• Create a minimalistic but sensible UX
-• You are allowed to use any dependencies, including UI libraries, but make sure your
+- Use ReactJS to complete the challenge
+- Make sure the solution works
+- Create a minimalistic but sensible UX
+- You are allowed to use any dependencies, including UI libraries, but make sure your
 choice is justified
-• Your code should be readable, maintainable, and production-ready
-• Your work will be reviewed in Chrome/a Chromium-based browser, so test
+- Your code should be readable, maintainable, and production-ready
+- Your work will be reviewed in Chrome/a Chromium-based browser, so test
 accordingly
-• Provide the solution via a GitHub repo, or a CodeSandbox
-• Leave any notes you might have in a README.md file in the root of the repo
-• Specify how much time approximately it took you to complete the challenge
+- Provide the solution via a GitHub repo, or a CodeSandbox
+- Leave any notes you might have in a README.md file in the root of the repo
+- Specify how much time approximately it took you to complete the challenge
 
 **Nice to have**
-• Unit and/or e2e testing
-• Strictly typed codebase (consider using Typescript or Flow)
+- Unit and/or e2e testing
+- Strictly typed codebase (consider using Typescript or Flow)
 
 [Alvaro Hernandez](mailto:alvarohernandezassens@gmail.com)
 
